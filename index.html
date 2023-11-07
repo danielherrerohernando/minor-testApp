@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola clase</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="random.css">
+</head>
+
+<body>
+    <header class="center purplebox">
+        <h1>TODO LIST</h1>
+    </header>
+    <main>
+        <form>
+            <h2>Nueva tarea</h2>
+            <label for="description">Escribe la descripción de la tarea</label>
+            <textarea id="description"></textarea>
+            <label>Fecha límite</label>
+            <input type="datetime-local" />
+            <button class="center purplebox insertbutton">INSERTAR</button>
+        </form>
+        <section>
+            <h2>Tareas</h2>
+            <ul>
+                <li class="item">
+                    <p>Continuar con la clase donde lo dejásemos</p>
+                    <p>Fecha límite: 18Nov</p>
+                    <button>Eliminar</button>
+                </li>
+                <li class="item">
+                    <p>Algo nuevo</p>
+                    <p>Fecha límite: 19Nov</p>
+                    <button>Eliminar</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
