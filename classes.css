@@ -24,9 +24,7 @@
     transition: all 1s;
 }
 
-.item:hover {
-    transform: rotate(180deg);
-}
+
 
 .item>p:nth-child(1) {
     font-size: larger;

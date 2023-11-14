@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" href="random.css">
     <link rel="stylesheet" href="classes.css">
+
+
 </head>
 
 <body>
@@ -21,28 +23,22 @@
     <main>
         <form>
             <h2>Nueva tarea</h2>
-            <label for="description">Escribe la descripción de la tarea</label>
-            <textarea id="description"></textarea>
+            <label for="descriptionInput">Escribe la descripción de la tarea</label>
+            <textarea id="descriptionInput"></textarea>
             <label>Fecha límite</label>
-            <input type="datetime-local" />
-            <button class="center purplebox insertbutton">INSERTAR</button>
+            <input id="dateInput" type="date" />
+            <button id="mySubmitButton" class="center purplebox insertbutton">INSERTAR</button>
         </form>
         <section>
             <h2>Tareas</h2>
-            <ul>
-                <li class="item">
-                    <p>Continuar con la clase donde lo dejásemos</p>
-                    <p>Fecha límite: 18Nov</p>
-                    <button>Eliminar</button>
-                </li>
-                <li class="item">
-                    <p>Algo nuevo</p>
-                    <p>Fecha límite: 19Nov</p>
-                    <button>Eliminar</button>
-                </li>
+            <ul id="list">
             </ul>
         </section>
     </main>
+    <script src="./js/functionality.js"></script>
+    <script>
+        renderListOfTasks()
+    </script>
 </body>
 
 </html>
